@@ -1,4 +1,4 @@
-name: CI
+name: PHPUnit
 
 on: [push]
 
@@ -9,5 +9,4 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - run: composer install
-    - run: ./vendor/bin/phpunit --version
+    - run: phpunit --version
