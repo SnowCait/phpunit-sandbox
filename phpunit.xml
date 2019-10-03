@@ -1,0 +1,10 @@
+<phpunit bootstrap="vendor/autoload.php">
+    <testsuites>
+        <testsuite name="A">
+            <file>tests/test1.php</file>
+        </testsuites>
+        <testsuite name="B">
+            <file>tests/test2.php</file>
+        </testsuites>
+    </testsuites>
+</phpunit>
