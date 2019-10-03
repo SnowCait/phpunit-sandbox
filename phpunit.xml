@@ -2,12 +2,12 @@
     <testsuites>
         <testsuites name="default">
             <directory>tests/</directory>
-        </testsuites>
+        </testsuite>
         <testsuite name="A">
             <file>tests/test1.php</file>
-        </testsuites>
+        </testsuite>
         <testsuite name="B">
             <file>tests/test2.php</file>
-        </testsuites>
+        </testsuite>
     </testsuites>
 </phpunit>
