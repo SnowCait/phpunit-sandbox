@@ -6,8 +6,11 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        testsuite: [A, B]
     
     steps:
     - uses: actions/checkout@v1
     - run: composer install
-    - run: ./vendor/bin/phpunit
+    - run: ./vendor/bin/phpunit --testsuite=${{ matrix.testsuite }}
